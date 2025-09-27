@@ -1,0 +1,25 @@
+cat << EOF > .gitignore
+# ----------------------------------------
+# 1. GENERAL BUILD ARTIFACTS (BACKEND)
+# ----------------------------------------
+/email-writer-backend/target/
+/email-writer-backend/.mvn/wrapper/maven-wrapper.jar
+.env
+*.log
+
+# ----------------------------------------
+# 2. JAVASCRIPT CLIENTS (FRONTEND & EXTENSION)
+# ----------------------------------------
+/email-writer-frontend/node_modules
+/email-writer-frontend/build
+
+/email-writer-extension/node_modules
+/email-writer-extension/dist
+
+# ----------------------------------------
+# 3. COMMON IDE / SYSTEM FILES
+# ----------------------------------------
+.idea
+*.iws
+.DS_Store
+EOF
